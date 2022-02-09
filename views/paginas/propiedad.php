@@ -1,0 +1,27 @@
+<main class="contenedor seccion contenido-centrado">
+        <h1 data-cy="propiedad-titulo"><?php echo $propiedad->titulo; ?></h1>
+
+        <picture>
+        <img src="/imagenes/<?php echo $propiedad->imagen; ?>" class="imagen-anuncio" />
+        </picture>
+
+        <div class="resumen-propiedad">
+            <h3 class="precio"><?php echo $propiedad->precio; ?></h3>
+            <ul class="iconos-caracteristicas">
+                <li class="iconoz">
+                    <img class="icono" loading="lazy" src="build/img/icono_wc.svg" alt="icono wc">
+                    <p><?php echo $propiedad->wc; ?></p>
+                </li>
+                <li>
+                    <img class="icono" loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+                    <p><?php echo $propiedad->estacionamiento; ?></p>
+                </li>
+                <li>
+                    <img class="icono"  loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono habitaciones">
+                    <p><?php echo $propiedad->habitaciones; ?></p>
+                </li>
+            </ul>
+
+            <p class="anuncioz"><?php echo $propiedad->descripcion; ?></p>
+        </div>
+    </main>
